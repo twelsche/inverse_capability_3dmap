@@ -10,7 +10,7 @@ find_package(catkin REQUIRED  COMPONENTS
   geometry_msgs
   visualization_msgs 
   capability_map
-  inverse_capability_map_utils
+  #inverse_capability_map_utils
   #symbolic_planning_utils # for testing sample drawing
   moveit_msgs # for testing sample drawing
   moveit_core

@@ -10,9 +10,9 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   tf_conversions  
   visualization_msgs
-  capability_map
-  inverse_capability_map
-  inverse_capability_map_utils
+  #capability_map
+  #inverse_capability_map
+  #inverse_capability_map_utils
   inverse_capability_3dmap
   moveit_core
   moveit_ros_planning
@@ -20,7 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
   #eigen
 )
 find_package(cmake_modules REQUIRED)
-find_package(eigen REQUIRED)
+find_package(Eigen REQUIRED)
 find_package(octomap REQUIRED)
 
 ## System dependencies are found with CMake's conventions

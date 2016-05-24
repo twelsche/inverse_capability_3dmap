@@ -11,8 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   tf_conversions  
   visualization_msgs
   capability_map
-  inverse_capability_map
-  inverse_capability_map_utils
+  #inverse_capability_map
+  #inverse_capability_map_utils
   inverse_capability_3dmap
   moveit_core
   moveit_ros_planning

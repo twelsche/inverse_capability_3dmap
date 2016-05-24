@@ -10,8 +10,7 @@ find_package(catkin REQUIRED  COMPONENTS
   geometry_msgs
   visualization_msgs 
   capability_map
-  inverse_capability_map_utils
-  #symbolic_planning_utils # for testing sample drawing
+  #inverse_capability_map_utils
   moveit_msgs # for testing sample drawing
   moveit_core
   tf_conversions
@@ -118,10 +117,10 @@ find_package(octomap REQUIRED)
 #  DEPENDS system_lib
 #)
 catkin_package(
-  #INCLUDE_DIRS include
-  #LIBRARIES inverse_capability_3doctree 
-  #CATKIN_DEPENDS geometry_msgs roscpp std_msgs visualization_msgs
-  #DEPENDS octomap
+  INCLUDE_DIRS include
+  LIBRARIES inverse_capability_3doctree 
+  CATKIN_DEPENDS geometry_msgs roscpp std_msgs visualization_msgs
+  DEPENDS octomap
 )
 
 ###########

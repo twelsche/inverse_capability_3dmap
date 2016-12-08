@@ -260,7 +260,6 @@ std::istream& InverseCapability3DOcTreeNode::readValue(std::istream &s)
     	eulerangles.push_back(x);
     	eulerangles.push_back(y);
     	eulerangles.push_back(z);
-		// ROS_INFO("Read entry in map: (%g,%g,%g) with %g",x,y,z,percent);
     	eulerMap.insert(std::make_pair(eulerangles, percent));
     }
     s.read((char*)&children_char, sizeof(char)); // child existence

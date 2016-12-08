@@ -143,7 +143,7 @@ int main(int argc, char** argv)
     std::vector<double>& z_args = input.z;
     std::vector<double>& gOrientation_args = input.gripper_orientation;
     const double& resolution       = input.resolution;
-    const double& theta_resolution = input.theta_resolution;
+    const unsigned int& theta_resolution = input.theta_resolution;
 
     InverseCapability3DOcTree inv_tree(resolution);
     inv_tree.setGroupName(capa_tree->getGroupName());
@@ -239,7 +239,7 @@ int main(int argc, char** argv)
                             theta_rot = (acos(std::min(std::max((double) rotatedVector.z(),-1.0),1.0)) * 180.0 / M_PI);
                             
                             // ROS_INFO("Phi is: %g", phi_rot);
-                            // ROS_INFO("Theta is: %g", theta_rot);
+                            // ROS_INFO("Theta is: %g", theta_rot); 
                             bool possible = capa_tree->isPosePossible(result.getOrigin().x(), result.getOrigin().y(), result.getOrigin().z(),  phi_rot, theta_rot);
                             if (!possible)
                             {
@@ -282,7 +282,6 @@ int main(int argc, char** argv)
                                 // eulers.push_back(roll);
                                 // eulers.push_back(pitch);
                                 // eulers.push_back(yaw);
-
                                 std::map<std::vector<double>, double>::const_iterator find_it = inv_capa.find(eulers);
                                 if (find_it != inv_capa.end())
                                 {

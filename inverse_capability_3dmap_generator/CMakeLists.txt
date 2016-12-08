@@ -152,6 +152,13 @@ target_link_libraries(inverse_capability3d_generator
   ${OCTOMAP_LIBRARIES}
 )
 
+add_executable(irm_bounding_points src/IRMBoundingPotentialPoints.cpp)
+target_link_libraries(irm_bounding_points
+  ${EIGEN_LIBRARIES}
+  ${catkin_LIBRARIES}
+  ${OCTOMAP_LIBRARIES}
+)
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(inverse_capability_3dmap_generator_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

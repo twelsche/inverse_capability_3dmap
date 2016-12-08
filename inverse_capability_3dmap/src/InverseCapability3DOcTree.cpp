@@ -73,7 +73,7 @@ InverseCapability3DOcTree* InverseCapability3DOcTree::readFile(const std::string
             file.ignore(1, ' ');
             std::getline(file, tipName);
         }
-        else if (qualifier == "theta_resolution")
+        else if (qualifier == "angle_resolution")
         {
             file.ignore(1, ' ');
             std::getline(file, angle_resolution);

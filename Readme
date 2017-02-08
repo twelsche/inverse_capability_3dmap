@@ -1,1 +1,7 @@
-ydxfgn
+Depends on capability map:
+
+url = https://github.com/dornhege/capability_map.git
+
+utility_packages:
+url = https://aisgit.informatik.uni-freiburg.de/dornhege/utility_packages.git
+
